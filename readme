@@ -1,0 +1,33 @@
+chukwuma
+Justice Chukwuma Assignment 3
+
+I contributed everything to this assignment. I don't have a partner. Therefore,
+I coded up all the HTML templates and the design of the website. I also
+modified the behavior of the database code (database.py) from Assignment 2 so
+that it easily integrated with this assignment and passed the necessary errors
+to my penny.py file. I also did all the debugging myself.
+
+I had asked Anat during office hours how to get the same design as the form on
+the reference homepage because my labels and text inputs were not aligning
+correctly. She suggested that I look up tables, and that hint allowed me to get
+the same design as the reference. I had also asked Anat about the nuance of
+using Jinja. She also helped me figure out why my database.py wasn't returning
+the exception that I had wanted. The TA Lisa Liu helped me realize why my
+cookies weren't working -- I unfortunately was using request.args.get(), rather
+than request.cookies.get().
+
+For the completion of this assignment, I utilized office hours, the lecture
+handouts, and posts on Ed Discussions.
+
+I spent about 20 hours on this assignment.
+
+This assignment helped me learn how the user is sent from one page to another
+on the backend. It allowed me to break down a website to its structure, and I
+found that very exciting. I also received a good understanding of cookies and
+finally how to catch errors thrown from a different file.
+
+The reason why my assignment is late is because I was trying to implement the
+cookies feature. Turns out, I was using request.args.get(), rather than
+request.cookies.get(). I think I missed this all day on Sunday because I was
+sleep deprived from getting a few hours of sleep and taking a midterm earlier
+that day at 9:30am.

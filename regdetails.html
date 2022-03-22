@@ -1,0 +1,47 @@
+<!-- =============================================== -->
+<!-- regdetails.html                                      -->
+<!-- Author: Justice Chukwuma                        -->
+<!-- =============================================== -->
+<!DOCTYPE html>
+  <html>
+    {% include 'header.html'%}
+    <body>
+      <hr/>
+    <h2>Class Details (class id {{id}})</h2>
+    <strong>Course Id: </strong> {{info["Course Id: "]}}
+    <br />
+    <strong>Days: </strong> {{info["Days: "]}}
+    <br />
+    <strong>Start time: </strong> {{info["Start time: "]}}
+    <br />
+    <strong>End time: </strong> {{info["End time: "]}}
+    <br />
+    <strong>Building: </strong> {{info["Building: "]}}
+    <br />
+    <strong>Room: </strong> {{info["Room: "]}}
+    <hr />
+    <h2> Course Details (course id {{info["Course Id: "]}})</h2>
+
+    {% for data in info["Dept and Number: "] %}
+      <strong>Dept and Number: </strong> {{data}}
+      <br />
+    {% endfor %}
+    <strong>Area: </strong> {{info["Area: "]}}
+    <br>
+    <strong>Title: </strong> {{info["Title: "]}}
+    <br>
+    <strong>Description: </strong> {{info["Description: "]}}
+    <br>
+    <strong>Prerequisites: </strong> {{info["Prerequisites: "]}}
+    <br>
+    {% for data in info["Professor: "] %}
+      <strong>Professor: </strong> {{data}}
+      <br />
+    {% endfor %}
+
+    <hr/>
+    Click here to do
+    <a href="/?dept={{prev_dept}}&num={{prev_num}}&area={{prev_area}}&title={{unquote_plus(prev_title)}}">another class search</a><br>
+    {% include 'footer.html' %}
+    </body>
+  </html>
